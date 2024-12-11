@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: 142 76% 36%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 142 50% 95%;
+  --secondary-foreground: 142 76% 36%;
+  --background: 0 0% 100%;
+  --foreground: 0 0% 3.9%;
+  --muted: 0 0% 96.1%;
+  --muted-foreground: 0 0% 45.1%;
+  --border: 142 5% 90%;
+}
+
+.dark {
+  --primary: 142 76% 36%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 142 50% 95%;
+  --secondary-foreground: 142 76% 36%;
+  --background: 0 0% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 0 0% 14.9%;
+  --muted-foreground: 0 0% 63.9%;
+  --border: 142 5% 20%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.nav-link {
+  @apply px-4 py-2 text-sm font-medium transition-colors hover:text-primary;
+}
+
+.nav-link.active {
+  @apply text-primary;
+}
+
+.hero-section {
+  @apply relative h-screen flex items-center justify-center overflow-hidden;
+  background: linear-gradient(to bottom right, #f0fdf4, #ffffff);
+}
+
+.section {
+  @apply py-20 px-4 md:px-6 lg:px-8;
+}
