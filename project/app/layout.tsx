@@ -1,14 +1,14 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import { Header } from '@/components/header';
+import { Footer } from '@/components/footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Grupo Tapajós - Distribuição de Medicamentos',
-  description: 'Líder em distribuição de medicamentos na região Norte do Brasil',
+  title: 'Grupo Tapajos',
+  description: 'Grupo Tapajos',
 };
 
 export default function RootLayout({
@@ -17,12 +17,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR">
-      <body className={inter.className}>
-        <Navbar />
-        <main className="min-h-screen pt-16">
-          {children}
-        </main>
+    <html lang="en" className="h-full">
+      <body className={`${inter.className} flex min-h-full flex-col`}>
+        <Header />
+        <main className="flex-1">{children}</main>
         <Footer />
       </body>
     </html>
