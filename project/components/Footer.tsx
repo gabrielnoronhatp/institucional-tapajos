@@ -32,8 +32,8 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold">Contato</h3>
             <ul className="mt-4 space-y-2 text-sm">
-              <li className="text-gray-300">Email: contato@empresa.com</li>
-              <li className="text-gray-300">Telefone: (11) 1234-5678</li>
+              <li className="text-gray-300">Email: selecao@grupotapajos.com.br</li>
+              <li className="text-gray-300">Telefone: +55 (92) 98115-8728</li>
             </ul>
           </div>
           <div>
