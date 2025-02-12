@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { fbLogo, flexAtcLogo, flexLogo, strLogo, tpjLogo } from "./assets";
